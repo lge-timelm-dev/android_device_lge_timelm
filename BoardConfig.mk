@@ -68,7 +68,6 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
 BOARD_BOOT_HEADER_VERSION := 2
 BOARD_KERNEL_CMDLINE := \
     androidboot.memcg=1 \
-    video=vfb:640x400,bpp=32,memsize=3072000 \
     lpm_levels.sleep_disabled=1 \
     msm_rtb.filter=0x237 \
     service_locator.enable=1 \
@@ -229,3 +228,4 @@ CONFIG_ACS := true
 
 # Inherit the proprietary files
 include vendor/lge/timelm/BoardConfigVendor.mk
+
