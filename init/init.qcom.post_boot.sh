@@ -412,7 +412,3 @@ case "$target" in
     configure_memory_parameters
     ;;
 esac
-
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_rate
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/sampling_down_factor
-chown -h system /sys/devices/system/cpu/cpufreq/ondemand/io_is_busy
