@@ -2,5 +2,8 @@
 audio.sys.noisy.broadcast.delay=500
 audio.sys.offload.pstimeout.secs=3
 
+# eBPF
+ro.bpf.kver_override=5.10.239
+
 # Voice assistant
 ro.opa.eligible_device=true
