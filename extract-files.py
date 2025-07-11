@@ -37,7 +37,6 @@ lib_fixups: lib_fixups_user_type = {
         'com.qti.stats.pdlib',
         'com.qualcomm.qti.dpm.api@1.0',
         'libmmosal',
-        'vendor.qti.hardware.wifidisplaysession@1.0',
         'vendor.qti.imsrtpservice@3.0',
     ): lib_fixup_vendor_suffix,
 }
@@ -53,16 +52,6 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libcrypto_shim.so'),
     'vendor/lib64/libril-qc-hal-qmi.so': blob_fixup()
 	    .replace_needed('vendor.lge.hardware.radio@2.0.so', 'vendor.lge.hardware.radio@2.0_vendor.so'),
-    'system_ext/bin/wfdservice': blob_fixup()
-        .add_needed('libwfdservice_shim.so'),
-    'system_ext/lib/libwfdmmsrc_system.so': blob_fixup()
-	    .add_needed('libgui_shim.so'),
-    'system_ext/lib/libwfdservice.so': blob_fixup()
-        .replace_needed('android.media.audio.common.types-V2-cpp.so', 'android.media.audio.common.types-V4-cpp.so'),
-    'system_ext/lib64/libwfdnative.so': blob_fixup()
-        .replace_needed('android.hidl.base@1.0.so', 'libhidlbase.so')
-	    .add_needed('libbinder_shim.so')
-        .add_needed('libinput_shim.so'),
     'vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so': blob_fixup()
 	    .sig_replace('9A 0A 00 94', 'E0 03 00 AA'),
 }  # fmt: skip
