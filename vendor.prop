@@ -267,9 +267,6 @@ ro.config.vc_call_vol_steps=7
 # WiFi Aware
 wifi.aware.interface=wifi-aware0
 
-# WiFi Display
-persist.sys.wfd.virtual=0
-
 # ZRAM writeback
 ro.zram.mark_idle_delay_mins=60
 ro.zram.first_wb_delay_mins=1440
