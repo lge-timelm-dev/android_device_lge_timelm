@@ -35,7 +35,6 @@ genfscon sysfs /devices/platform/vendor/vendor:lge-veneer-psy/power_supply/venee
 # Wakeup
 genfscon sysfs /devices/virtual/diag/diag                                                                                           u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/soc/880000.i2c/i2c-1/1-0061/power_supply/wireless/wakeup9                                          u:object_r:sysfs_wakeup:s0
-genfscon sysfs /devices/platform/soc/ae90000.qcom,dp_display/wakeup                                                                 u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/vendor/vendor:lge_usb_ds2/wakeup                                                                   u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/vendor/vendor:lge-veneer-psy/wakeup                                                                u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/vendor/vendor:lge-veneer-psy/power_supply/veneer/wakeup10                                          u:object_r:sysfs_wakeup:s0
