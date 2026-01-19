@@ -197,8 +197,7 @@ else
               *)
                 #Set PPR parameters for all other targets.
                 echo $set_almk_ppr_adj > /sys/module/process_reclaim/parameters/min_score_adj
-                # LGE: don't use process reclaim
-                #echo 1 > /sys/module/process_reclaim/parameters/enable_process_reclaim
+                echo 1 > /sys/module/process_reclaim/parameters/enable_process_reclaim
                 echo 50 > /sys/module/process_reclaim/parameters/pressure_min
                 echo 70 > /sys/module/process_reclaim/parameters/pressure_max
                 echo 30 > /sys/module/process_reclaim/parameters/swap_opt_eff
@@ -225,8 +224,7 @@ else
 
     # Disable wsf for all targets beacause we are using efk.
     # wsf Range : 1..1000 So set to bare minimum value 1.
-    # LGE: disable wmark scale factor, use /device/lge/common/svelte/svelte.mk
-    #echo 1 > /proc/sys/vm/watermark_scale_factor
+    echo 1 > /proc/sys/vm/watermark_scale_factor
 
     configure_read_ahead_kb_values
 
