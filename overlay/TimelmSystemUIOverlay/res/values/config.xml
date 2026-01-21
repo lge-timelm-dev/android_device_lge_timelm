@@ -1,54 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-/*
-** Copyright 2016, The Android Open Source Project
-**
-** Licensed under the Apache License, Version 2.0 (the "License");
-** you may not use this file except in compliance with the License.
-** You may obtain a copy of the License at
-**
-**     http://www.apache.org/licenses/LICENSE-2.0
-**
-** Unless required by applicable law or agreed to in writing, software
-** distributed under the License is distributed on an "AS IS" BASIS,
-** WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-** See the License for the specific language governing permissions and
-** limitations under the License.
-*/
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
 -->
-
-<!-- These resources are around just to allow their values to be customized
-     for different hardware and product builds. -->
 <resources>
-    <!-- Color of the UDFPS pressed view -->
-    <color name="config_udfpsColor">#00ff00ff</color>
-
-    <!-- Control whether status bar should distinguish HSPA data icon from UMTS
-         data icon on devices -->
-    <bool name="config_hspa_data_distinguishable">true</bool>
-
-    <!-- If true, enable the advance anti-falsing classifier on the lockscreen. On some devices it
-         does not work well, particularly with noisy touchscreens. Note that disabling it may
-         increase the rate of unintentional unlocks. -->
-    <bool name="config_lockscreenAntiFalsingClassifierEnabled">true</bool>
-
     <!-- Doze: does this device support STATE_DOZE?  -->
     <bool name="doze_display_state_supported">true</bool>
-
-    <!-- Doze: when to pulse after a buzzworthy notification arrives -->
-    <string name="doze_pulse_schedule" translatable="false">10s,30s,60s,180s</string>
-
-    <!-- Doze: check proximity sensor before pulsing from intent? -->
-    <bool name="doze_proximity_check_before_pulse_intent">true</bool>
-
-    <!-- Doze: pulse parameter - delay to wait for the screen to wake up after an intent -->
-    <integer name="doze_pulse_delay_in_intent">0</integer>
-
-    <!-- Should "4G" be shown instead of "LTE" when the network is NETWORK_TYPE_LTE? -->
-    <bool name="config_show4GForLTE">false</bool>
-
-    <!-- Doze: can we assume the pickup sensor includes a proximity check? -->
-    <bool name="doze_pickup_performs_proximity_check">true</bool>
 
     <!-- Type of a sensor that provides a low-power estimate of the desired display
          brightness, suitable to listen to while the device is asleep (e.g. during
@@ -56,7 +13,8 @@
     <string name="doze_brightness_sensor_type" translatable="false">android.sensor.light</string>
 
     <!-- Doze: Table that translates sensor values from the doze_brightness_sensor_type sensor
-               to brightness values; -1 means keeping the current brightness. -->
+               to brightness values in the integer scale [1, 255]; -1 means keeping the current
+               brightness. -->
     <integer-array name="config_doze_brightness_sensor_to_brightness">
         <item>-1</item> <!-- 0: OFF -->
         <item>1</item> <!-- 1: NIGHT -->
@@ -76,30 +34,4 @@
         <item>0</item> <!-- 3: HIGH -->
         <item>0</item> <!-- 4: SUN -->
     </integer-array>
-
-    <!-- Whether to enable framework dimming for UDFPS -->
-    <bool name="config_udfpsFrameworkDimming">true</bool>
-
-    <!-- Array of brightness-alpha LUT for framework dimming -->
-    <string-array name="config_udfpsDimmingBrightnessAlphaArray" translatable="false">
-          <item>1,230</item>
-          <item>15,230</item>
-          <item>17,210</item>
-          <item>31,205</item>
-          <item>49,180</item>
-          <item>60,165</item>
-          <item>80,120</item>
-          <item>90,113</item>
-          <item>96,110</item>
-          <item>101,106</item>
-          <item>107,103</item>
-          <item>121,69</item>
-          <item>136,62</item>
-          <item>142,58</item>
-          <item>149,55</item>
-          <item>162,43</item>
-          <item>176,39</item>
-          <item>190,37</item>
-          <item>255,0</item>
-    </string-array>
 </resources>
