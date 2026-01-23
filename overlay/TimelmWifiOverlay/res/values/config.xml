@@ -28,16 +28,6 @@
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
     <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
 
-    <!-- List of allowed channels in 2GHz band for softap. If the device doesn't want to restrict
-         channels this should be empty. Values is a comma separated channel string and/or channel
-         range string like '1-6,11'. -->
-    <string translateble="false" name="config_wifiSoftap2gChannelList"/>
-
-    <!-- List of allowed channels in 5GHz band for softap. If the device doesn't want to restrict
-         channels this should be empty. Values is a comma separated channel string and/or channel
-         range string like '36-48,149'. -->
-    <string translateble="false" name="config_wifiSoftap5gChannelList"/>
-
     <!-- Integer delay in milliseconds before set wlan interface up during watchdog recovery -->
     <integer name="config_wifi_framework_recovery_timeout_delay">3000</integer>
 
