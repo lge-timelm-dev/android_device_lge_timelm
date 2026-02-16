@@ -312,7 +312,7 @@ firmware_directories /mnt/vendor/persist-lg/wifi/qcom/ /vendor/firmware_mnt/imag
 
 # NFC permissions
 /dev/cxd22xx-i2c        0660    nfc         nfc
-/dev/pn547              0660    nfc         nfc
+/dev/nfc-nci            0660    nfc         nfc
 
 # UIO devices
 /dev/uio0                 0660   system     system
