@@ -70,10 +70,12 @@ PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
     android.hardware.bluetooth.audio-impl \
     android.hardware.soundtrigger@2.3-impl \
+    audio_amplifier.lge \
     audio.bluetooth.default \
-    audio.primary.default \
+    audio.primary.kona \
     audio.r_submix.default \
     audio.usbv2.default \
+    liba2dpoffload \
     libbatterylistener \
     libbundlewrapper \
     libcirrusspkrprot \
@@ -91,6 +93,7 @@ PRODUCT_PACKAGES += \
     libreverbwrapper \
     libsndmonitor \
     libspkrprot \
+    libssrec \
     libvisualizer \
     libvolumelistener \
     sound_trigger.primary.kona \
@@ -127,7 +130,7 @@ PRODUCT_PACKAGES += \
 # DAC
 PRODUCT_PACKAGES += \
     QuadDACPanel \
-    vendor.lge.hardware.audio.dac.control@2.0-service.proprietary
+    vendor.lge.hardware.audio.dac.control@2.0-service
 
 # Display
 PRODUCT_PACKAGES += \

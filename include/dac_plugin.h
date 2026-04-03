@@ -1,0 +1,24 @@
+/*
+ * SPDX-FileCopyrightText: The LineageOS Project
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+#pragma once
+
+/*
+ * Board specific devices and paths
+ *
+ * If your device exposes these controls in another place, you can either
+ * symlink to the locations given here, or override this header in your
+ * device tree.
+ *
+ * These values currently default to LGE SM8250 values.
+ */
+
+#define DEFAULT_BACKEND "headphones"
+#define DEFAULT_INTERFACE "RX_CDC_DMA_RX_0"
+#define ESS_BYPASS_MODE_MIXER_PATH "ess-bypass-mode"
+
+#define HIFI_DAC_BACKEND "TERT_MI2S_RX"
+#define HIFI_DAC_INTERFACE "TERT_MI2S_RX"
+#define ESS_HIFI_MODE_MIXER_PATH "ess-hifi-mode"
