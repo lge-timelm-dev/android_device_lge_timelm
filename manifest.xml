@@ -88,10 +88,57 @@
         <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
+        <name>vendor.lge.hardware.accessory</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IAccessory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.accessory.uevent</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAccessoryUevent/default</fqname>
+        <fqname>@1.1::IAccessoryUevent/default</fqname>
+        <fqname>@1.2::IAccessoryUevent/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.coverdisplay</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ICoverDisplay/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.display.brightness</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::IDisplayBrightness/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.display.general</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IDisplayGeneral/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.display.tune</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.3::IDisplayTune/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.display.uevent</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IDisplayUevent/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.dualscreen</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IDualScreen/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>vendor.lge.hardware.lgdata</name>
         <transport>hwbinder</transport>
         <fqname>@1.1::ILgData/default</fqname>
         <fqname>@1.1::ILgDataVendorRil/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.lpwg</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.4::ILpwg/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.lge.hardware.radio</name>

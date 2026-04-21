@@ -1,4 +1,71 @@
 <compatibility-matrix type="framework" version="2.0">
+    <hal format="hidl">
+        <name>vendor.lge.hardware.accessory</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IAccessory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.accessory.uevent</name>
+        <transport>hwbinder</transport>
+        <version>1.0-2</version>
+        <interface>
+            <name>IAccessoryUevent</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.lge.hardware.coverdisplay</name>
+        <version>1.0</version>
+        <transport>hwbinder</transport>
+        <interface>
+            <name>ICoverDisplay</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.display.brightness</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IDisplayBrightness</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.2::IDisplayBrightness/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.display.general</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayGeneral</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IDisplayGeneral/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.display.tune</name>
+        <transport>hwbinder</transport>
+        <version>1.3</version>
+        <interface>
+            <name>IDisplayTune</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.3::IDisplayTune/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.display.uevent</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayUevent</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IDisplayUevent/default</fqname>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.lge.hardware.lgdata</name>
         <transport>hwbinder</transport>
@@ -9,6 +76,24 @@
         </interface>
         <interface>
             <name>ILgDataVendorRil</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.dualscreen</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IDualScreen</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.lge.hardware.lpwg</name>
+        <transport>hwbinder</transport>
+        <version>1.4</version>
+        <interface>
+            <name>ILpwg</name>
             <instance>default</instance>
         </interface>
     </hal>

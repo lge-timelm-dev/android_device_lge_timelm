@@ -1,6 +1,17 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from V600TM40d (TKQ1.220829.002).
 
+# Accessory
+vendor/bin/hw/vendor.lge.hardware.accessory@1.1-service
+vendor/etc/init/vendor.lge.hardware.accessory@1.1-service.rc
+vendor/lib64/hw/vendor.lge.hardware.accessory@1.1-impl.so
+vendor/lib64/hw/vendor.lge.hardware.accessory.uevent@1.2-impl.so
+vendor/lib64/vendor.lge.hardware.accessory@1.0.so
+vendor/lib64/vendor.lge.hardware.accessory@1.1.so
+vendor/lib64/vendor.lge.hardware.accessory.uevent@1.0.so
+vendor/lib64/vendor.lge.hardware.accessory.uevent@1.1.so
+vendor/lib64/vendor.lge.hardware.accessory.uevent@1.2.so
+
 # ACDB
 vendor/etc/acdbdata/Bluetooth_cal.acdb
 vendor/etc/acdbdata/General_cal.acdb
@@ -496,6 +507,27 @@ vendor/lib64/libhdcp2p2prov.so
 # Display (HDR)
 vendor/lib64/libhdr_tm.so
 
+# Display (LGE)
+vendor/bin/hw/vendor.lge.hardware.display.brightness@1.2-service
+vendor/bin/hw/vendor.lge.hardware.display.general@1.0-service
+vendor/bin/hw/vendor.lge.hardware.display.tune@1.3-service
+vendor/bin/hw/vendor.lge.hardware.display.uevent@1.0-service
+vendor/etc/init/vendor.lge.hardware.display.brightness@1.2-service.rc
+vendor/etc/init/vendor.lge.hardware.display.general@1.0-service.rc
+vendor/etc/init/vendor.lge.hardware.display.tune@1.3-service.rc
+vendor/etc/init/vendor.lge.hardware.display.uevent@1.0-service.rc
+vendor/lib64/hw/vendor.lge.hardware.display.brightness@1.2-impl.so
+vendor/lib64/hw/vendor.lge.hardware.display.uevent@1.0-impl.so
+vendor/lib64/vendor.lge.hardware.display.brightness@1.0.so
+vendor/lib64/vendor.lge.hardware.display.brightness@1.1.so
+vendor/lib64/vendor.lge.hardware.display.brightness@1.2.so
+vendor/lib64/vendor.lge.hardware.display.general@1.0.so
+vendor/lib64/vendor.lge.hardware.display.tune@1.0.so
+vendor/lib64/vendor.lge.hardware.display.tune@1.1.so
+vendor/lib64/vendor.lge.hardware.display.tune@1.2.so
+vendor/lib64/vendor.lge.hardware.display.tune@1.3.so
+vendor/lib64/vendor.lge.hardware.display.uevent@1.0.so
+
 # Display postprocessing
 vendor/bin/hw/vendor.display.color@1.0-service
 vendor/bin/ppd
@@ -570,6 +602,20 @@ vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
 vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
+
+# Dual Screen
+system_ext/app/DualScreenFirmware/DualScreenFirmware.apk
+vendor/bin/hw/vendor.lge.hardware.dualscreen@1.1-service
+vendor/etc/init/vendor.lge.hardware.dualscreen@1.1-service.rc
+vendor/lib64/hw/vendor.lge.hardware.dualscreen@1.1-impl.so
+vendor/lib64/vendor.lge.hardware.dualscreen@1.0.so
+vendor/lib64/vendor.lge.hardware.dualscreen@1.1.so
+
+# Dual Screen (Cover display)
+vendor/bin/hw/vendor.lge.hardware.coverdisplay@1.0-service
+vendor/etc/init/vendor.lge.hardware.coverdisplay@1.0-service.rc
+vendor/lib64/hw/vendor.lge.hardware.coverdisplay@1.0-impl.so
+vendor/lib64/vendor.lge.hardware.coverdisplay@1.0.so
 
 # ESE-Powermanager
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service
@@ -745,6 +791,16 @@ vendor/lib/liblistensoundmodel2.so
 vendor/lib/libmulawdec.so
 vendor/lib/libsmwrapper.so
 vendor/lib/vendor.qti.voiceprint@1.0.so
+
+# LPWG
+vendor/bin/hw/vendor.lge.hardware.lpwg@1.4-service
+vendor/etc/init/vendor.lge.hardware.lpwg@1.4-service.rc
+vendor/lib64/hw/vendor.lge.hardware.lpwg@1.4-impl.so
+vendor/lib64/vendor.lge.hardware.lpwg@1.0.so
+vendor/lib64/vendor.lge.hardware.lpwg@1.1.so
+vendor/lib64/vendor.lge.hardware.lpwg@1.2.so
+vendor/lib64/vendor.lge.hardware.lpwg@1.3.so
+vendor/lib64/vendor.lge.hardware.lpwg@1.4.so
 
 # Machine learning
 vendor/lib64/libnpu.so

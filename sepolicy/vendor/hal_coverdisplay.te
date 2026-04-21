@@ -1,0 +1,5 @@
+binder_call(hal_coverdisplay_client, hal_coverdisplay_server)
+binder_call(hal_coverdisplay_server, hal_coverdisplay_client)
+
+add_hwservice(hal_coverdisplay_server, hal_coverdisplay_hwservice)
+allow hal_coverdisplay_client hal_coverdisplay_hwservice:hwservice_manager find;

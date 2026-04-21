@@ -1,3 +1,15 @@
+attribute hal_accessory;
+attribute hal_accessory_client;
+attribute hal_accessory_server;
+attribute hal_coverdisplay;
+attribute hal_coverdisplay_client;
+attribute hal_coverdisplay_server;
+attribute hal_dualscreen;
+attribute hal_dualscreen_client;
+attribute hal_dualscreen_server;
 attribute hal_lgdata;
 attribute hal_lgdata_client;
 attribute hal_lgdata_server;
+attribute hal_lpwg;
+attribute hal_lpwg_client;
+attribute hal_lpwg_server;

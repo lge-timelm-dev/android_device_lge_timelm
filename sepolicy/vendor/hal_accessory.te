@@ -1,0 +1,5 @@
+binder_call(hal_accessory_client, hal_accessory_server)
+binder_call(hal_accessory_server, hal_accessory_client)
+
+add_hwservice(hal_accessory_server, hal_accessory_hwservice)
+allow hal_accessory_client hal_accessory_hwservice:hwservice_manager find;

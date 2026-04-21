@@ -1,5 +1,10 @@
+vendor.lge.hardware.accessory::IAccessory                               u:object_r:hal_accessory_hwservice:s0
+vendor.lge.hardware.accessory.uevent::IAccessoryUevent                  u:object_r:hal_accessory_hwservice:s0
+vendor.lge.hardware.coverdisplay::ICoverDisplay                         u:object_r:hal_coverdisplay_hwservice:s0
+vendor.lge.hardware.dualscreen::IDualScreen                             u:object_r:hal_dualscreen_hwservice:s0
 vendor.lge.hardware.lgdata::ILgData                                     u:object_r:hal_lgdata_hwservice:s0
 vendor.lge.hardware.lgdata::ILgDataVendorRil                            u:object_r:hal_lgdata_hwservice:s0
+vendor.lge.hardware.lpwg::ILpwg                                         u:object_r:hal_lpwg_hwservice:s0
 vendor.lge.hardware.radio::ILgeRadio                                    u:object_r:hal_telephony_hwservice:s0
 vendor.nxp.nxpnfc::INxpNfc                                              u:object_r:hal_nfc_hwservice:s0
 vendor.nxp.nxpese::INxpEse                                              u:object_r:hal_nfc_hwservice:s0

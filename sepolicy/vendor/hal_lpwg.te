@@ -1,0 +1,5 @@
+binder_call(hal_lpwg_client, hal_lpwg_server)
+binder_call(hal_lpwg_server, hal_lpwg_client)
+
+add_hwservice(hal_lpwg_server, hal_lpwg_hwservice)
+allow hal_lpwg_client hal_lpwg_hwservice:hwservice_manager find;

@@ -1,0 +1,5 @@
+binder_call(hal_dualscreen_client, hal_dualscreen_server)
+binder_call(hal_dualscreen_server, hal_dualscreen_client)
+
+add_hwservice(hal_dualscreen_server, hal_dualscreen_hwservice)
+allow hal_dualscreen_client hal_dualscreen_hwservice:hwservice_manager find;
