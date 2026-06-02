@@ -116,6 +116,18 @@ vendor/lib/libwebrtc_audio_preprocessing.so
 vendor/firmware/tfa98xx.cnt
 vendor/firmware/tfa98xx_reva.cnt
 
+# Audio configs
+vendor/etc/audio_configs.xml
+vendor/etc/audio_io_policy.conf
+vendor/etc/audio_platform_info.xml
+vendor/etc/audio_platform_info_intcodec.xml
+vendor/etc/audio_policy_volumes.xml
+vendor/etc/default_volume_tables.xml
+vendor/etc/graphite_ipc_platform_info.xml
+vendor/etc/mixer_paths.xml
+vendor/etc/sound_trigger_mixer_paths.xml
+vendor/etc/sound_trigger_platform_info.xml
+
 # Bluetooth firmware
 vendor/firmware/htbtfw20.tlv
 vendor/firmware/htnv20.bin
