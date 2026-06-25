@@ -87,9 +87,15 @@ BOARD_DTB_OFFSET := 0x01f00000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 TARGET_KERNEL_CONFIG := vendor/kona-perf_defconfig vendor/timelm.config
 TARGET_KERNEL_NO_GCC := true
+<<<<<<< HEAD
 TARGET_KERNEL_SOURCE := kernel/lge/sm8250
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE) --pagesize $(BOARD_KERNEL_PAGESIZE) --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --kernel_offset $(BOARD_KERNEL_OFFSET) --dtb_offset $(BOARD_DTB_OFFSET) --header_version $(BOARD_BOOT_HEADER_VERSION)
+=======
+TARGET_KERNEL_SOURCE := kernel/fxtec/sm6115
+TARGET_KERNEL_CONFIG := vendor/bengal-perf_defconfig vendor/ext_config/pro1x.config
+TARGET_KERNEL_CLANG_VERSION := r563880c
+>>>>>>> 75e840c (pro1x: Use Clang r563880c for kernel build)
 
 # Kernel modules - Audio
 TARGET_MODULE_ALIASES += \
