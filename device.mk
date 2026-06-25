@@ -120,10 +120,6 @@ TARGET_SCREEN_HEIGHT := 2460
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider-service.lineage
 
-# Configstore
-PRODUCT_PACKAGES += \
-    disable_configstore
-
 # DAC
 PRODUCT_PACKAGES += \
     QuadDACPanel \
