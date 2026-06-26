@@ -12,9 +12,6 @@ persist.vendor.cne.feature=1
 # Display
 persist.demo.hdmirotationlock=false
 
-# Fastbootd
-ro.fastbootd.available=true
-
 # GPS
 persist.backup.ntpServer=0.pool.ntp.org
 
