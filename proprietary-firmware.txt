@@ -1,0 +1,22 @@
+## All proprietary firmware from this list, unless pinned and noted otherwise,
+## are from V600TM40d (TKQ1.220829.002).
+
+abl.img;AB|51c8e464a269ef629d39c9662420af39203aab49
+akmu.img;AB
+aop.img;AB
+cmnlib64.img;AB
+cmnlib.img;AB
+devcfg.img;AB
+dsp.img;AB
+featenabler.img;AB
+hyp.img;AB
+imagefv.img;AB
+keymaster.img;AB
+laf.img;AB
+modem.img;AB
+multiimgoem.img;AB
+qupfw.img;AB
+tz.img;AB
+uefisecapp.img;AB
+xbl_config.img;AB
+xbl.img;AB
